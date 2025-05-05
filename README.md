@@ -17,10 +17,10 @@ The template file `main.bicep` attached was then deployed using **PowerShell**.
 ```Powershell
 az login
 az group create --name test-rg --location japaneast
-az deployment group create --resource-group test-rg --template-file main.bicep
-```
+az deployment group create --resource-group test-rg --template-file main.bicep```
 *Note: You will be prompted to enter a secure password, ensure this meets Azure's complexity requirements. It must be between 
 8 and 64 characters and meet 3 out of 4 of lowercase, uppercase, numbers, or symbols.*
+![Deployment screenshot](https://github.com/sashbya/Azure-Two-Tier-VM-Deployment-using-Bicep/blob/main/main.bicep)
 
 ## Parameters
 
@@ -47,5 +47,5 @@ az deployment group create --resource-group test-rg --template-file main.bicep
 
 Best practice after this test deployment is to delete resources no longer in use. This will ensure no costs are inadvertently incurred.
 ```Powershell
-az group delete --name test-rg --yes --no-wait
+az group delete --name test-rg --yes --no-wait```
 *The `no-wait` command allows you to execute other commands while the resources are being deleted.*
