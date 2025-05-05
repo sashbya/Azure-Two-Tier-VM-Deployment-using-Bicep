@@ -21,7 +21,8 @@ az deployment group create --resource-group test-rg --template-file main.bicep
 ```
 *Note: You will be prompted to enter a secure password, ensure this meets Azure's complexity requirements. It must be between 
 8 and 64 characters and meet 3 out of 4 of lowercase, uppercase, numbers, or symbols.*
-![Deployment screenshot](https://github.com/sashbya/Azure-Two-Tier-VM-Deployment-using-Bicep/blob/main/main.bicep)
+
+![Deployment Topology screenshot](https://github.com/sashbya/Azure-Two-Tier-VM-Deployment-using-Bicep/blob/main/az-bicep-deployment-topology.png)
 
 ## Parameters
 
